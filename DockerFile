@@ -4,14 +4,12 @@ FROM openjdk:17
 # Create a temporary volume for use in the container
 VOLUME /tmp
 
-# Expose port 4255 for external access
-EXPOSE 4255
+# Expose port 8080 for external access
+EXPOSE 8080
 
 # Add the JAR file to the container with a specific name
-ADD target/IES_UR_API-0.0.1.jar /user/app/
+ADD target/IES_UR_API-0.0.1.jar abc.jar
 
-# Set the working directory
-WORKDIR /user/app/
 
 # Specify the command to run the JAR file
-ENTRYPOINT ["java", "-jar", "/user/app/IES_UR_API-0.0.1.jar"]
+ENTRYPOINT ["java", "-jar", "IES_UR_API-0.0.1.jar"]

@@ -10,4 +10,8 @@ public class HiController {
 	public String hi() {
 		return "Hi";
 	}
+	@GetMapping("/hi")
+	public String hii() {
+		return "Welcome to new Jenkins setup";
+	}
 }

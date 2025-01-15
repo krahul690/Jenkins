@@ -8,7 +8,7 @@ VOLUME /tmp
 EXPOSE 8080
 
 # Add the JAR file to the container with a specific name
-ADD target/IES_UR_API-0.0.1.jar abc.jar
+ADD target/Jenkins-1.0.jar abc.jar
 
 # Specify the command to run the JAR file
 ENTRYPOINT ["java", "-jar", "abc.jar"]
